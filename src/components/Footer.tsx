@@ -23,7 +23,7 @@ const Footer = () => {
             <fieldset className="rounded-sm">
               <input
                 id="substance-input"
-                className=" bg-white h-11 px-3 rounded-sm outline-0 text-left text-base text-black font-inter placeholder:text-black/75 placeholder:opacity-50 w-full font-normal text-sm xl:text-base italic md:max-w-[336px]"
+                className=" bg-white h-11 px-3 rounded-sm outline-0 text-left text-black font-inter placeholder:text-black/75 placeholder:opacity-50 w-full font-normal text-sm xl:text-base italic md:max-w-[336px]"
                 type="email"
                 placeholder="user.example@mail.com"
                 required
