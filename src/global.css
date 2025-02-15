@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap");
+
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+@tailwind utilities;
+
+.left-sidebar-hidden {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.left-sidebar-visible {
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar-hidden {
+  transform: translateX(200%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar-visible {
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.accordion-style {
+  max-height: 2.5rem;
+  opacity: 0.65;
+  overflow: hidden;
+  transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.accordion-style.open {
+  max-height: 32rem; /* Adjust as needed */
+  opacity: 1;
+}
+
+#accordionSection #accordionContent {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 500ms;
+}
+
+#accordionSection #accordionContent[aria-hidden="true"] {
+  grid-template-rows: 0fr;
+}
